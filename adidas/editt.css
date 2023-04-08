@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(#111,#222);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+   
+    
+body::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    clip-path: circle(40% at right 70%);
+    z-index: -1;}
+
+
+.container{
+    width: 80%;
+    height:80%;
+    background:rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+nav{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+}
+nav .logo{
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+nav ul li {
+    display: inline-block; 
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+}
+nav ul li a:hover{
+    color: red;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:600px;
+    width: 80%;
+    margin: auto;
+}
+.content .text {
+    color: white;
+    width: 40%;
+}
+.content .text h2{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+.content .text p{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 10px 0px ;
+    letter-spacing: 1px;
+}
+.content .image {
+    width: 40%;
+   
+}
+.content .image img{
+    width: 400px;
+}
+@media (min-width:900px) and (max-width:1440px) {
+    .content .image img{
+        width: 300px;
+    }
+    }
+    @media  (max-width:900px){
+        .content, nav{
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .content .text {
+            width:80%;
+           
+        }
+        .content .image{
+          width: 400px
+        }
+        body::after{
+            clip-path: circle(40% at bottom);
+        }
+
+        
+    }
+    
+
+   
