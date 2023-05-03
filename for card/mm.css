@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.continer{
+    
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+.content{
+    margin-top: 50px;
+    display: grid;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.grad{
+     display: grid;
+     
+     grid-template-rows: repeat(10,1fr);
+     grid-template-columns: repeat(8,1fr);
+     
+     height: 100vh;
+     gap: 10px;
+     overflow: hidden;
+     
+     
+}
+.team{
+    
+    grid-row: 3/6;
+    grid-column: 4/6;
+    background-color: white;
+    box-shadow: 10px 10px 8px #888888 ;
+    text-align: center;
+    border-top: 4px solid rgb(255, 38, 0);
+    display: grid;
+    grid-template-rows:repeat(3,1fr) ;
+    grid-template-columns: repeat(1,1fr);
+    border-radius: 10px;
+    min-width: initial;
+    
+    
+}  
+.team .image {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display:flex;
+    justify-content:right;
+    margin-right: 10px;
+} 
+ .super{
+    background-color:white;
+    grid-column: 4/6;
+    grid-row: 6/9;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border-top: 4px solid yellow;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #888888 ;
+    
+    
+
+}
+.super h1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.super p{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.super .image3 {
+    display: flex;
+    justify-content: right;
+    
+    margin-right: 10px;
+}
+.calc{
+    background-color: white;
+    grid-row: 5/8;
+    grid-column: 6/8;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border-top: rgb(17, 0, 255) solid 4px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #888888 ;
+    min-width: initial;
+  
+
+}
+.calc h1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.calc p{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.calc .image4 {
+    display: grid;
+    justify-content: right;
+    
+    margin-right: 10px;
+}
+.karma{
+    background-color: white;
+    grid-row: 5/8;
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border-top: 4px solid aqua;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #888888 ;
+ 
+}
+.karma h1{
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    display: grid;
+}
+.karma p{
+    display: grid;
+   justify-content: center;
+   align-items: center;
+}
+.karma .image2{
+    display: flex;
+    justify-content: right;
+   
+    margin-right: 10px;
+}
+img{
+    scale: 0.6;
+   
+
+}
+@media (max-width:720px) {
+     .grad{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
