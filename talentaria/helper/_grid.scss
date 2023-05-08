@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+
+  margin: 0;
+  @include prefixer(box-sizing, border-box, webkit moz o);
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.continer {
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  // margin: auto;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  
+  position: relative;
+
+
+  
+}

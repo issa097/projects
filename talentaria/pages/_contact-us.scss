@@ -1,0 +1,62 @@
+.contact {
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  padding: 30px 15px;
+  @media #{$maxmobile} {
+    height: auto;
+  }
+
+  .contact-us {
+    @media #{$maxmobile} {
+      width: 100%;
+      flex-direction: column;
+    }
+    display: flex;
+    justify-content: space-between;
+    .address {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .contacts {
+      }
+      .swing {
+      }
+      .location {
+      }
+      .number {
+      }
+      .mail {
+      }
+    }
+    .contact-form {
+      width: 50%;
+      @media #{$maxmobile} {
+        width: 100%;
+      }
+      form {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1px 2px 20px 0px black;
+        gap: 10px;
+        label {
+        }
+        input {
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+      }
+      .check-buttons {
+        display: flex;
+        justify-content: space-between;
+
+        label {
+        }
+        button {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}
